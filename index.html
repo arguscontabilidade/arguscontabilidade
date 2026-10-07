@@ -1,376 +1,555 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Comosefaz Soluções Empresariais — contabilidade, consultoria tributária, apoio administrativo e soluções empresariais em João Pessoa - PB.">
-<meta name="theme-color" content="#081b33">
-<title>Comosefaz Soluções Empresariais | Contabilidade em João Pessoa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Escritório Argus Contabilidade - serviços contábeis em Matupá, Mato Grosso.">
+  <title>Escritório Argus | Contabilidade em Matupá - MT</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-<style>
-:root{
-  --navy:#071a31;
-  --navy-2:#0b2748;
-  --blue:#1769e0;
-  --blue-2:#0d55bf;
-  --cyan:#18b7a0;
-  --ink:#102238;
-  --muted:#68788d;
-  --bg:#f6f9fc;
-  --line:#e4ebf3;
-  --white:#fff;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:82px}
-body{margin:0;color:var(--ink);font-family:"DM Sans",sans-serif;background:#fff;line-height:1.65}
-h1,h2,h3,h4,h5,h6,.brand,.display-font{font-family:"Plus Jakarta Sans",sans-serif}
-a{text-decoration:none}
-.navbar{
-  background:rgba(255,255,255,.93)!important;
-  backdrop-filter:blur(16px);
-  border-bottom:1px solid rgba(228,235,243,.8);
-  transition:.25s;
-}
-.navbar.scrolled{box-shadow:0 8px 28px rgba(8,27,51,.08)}
-.brand{font-weight:800;letter-spacing:-.03em;color:var(--navy)}
-.brand-mark{
- width:42px;height:42px;border-radius:13px;display:inline-flex;align-items:center;justify-content:center;
- color:#fff;background:linear-gradient(135deg,var(--blue),var(--cyan));box-shadow:0 10px 24px rgba(23,105,224,.2)
-}
-.nav-link{font-weight:600;color:#415269!important;font-size:.94rem}
-.nav-link:hover{color:var(--blue)!important}
-.btn-primary-custom{
- background:var(--blue);border:1px solid var(--blue);color:#fff;border-radius:12px;
- padding:12px 19px;font-weight:700;box-shadow:0 12px 24px rgba(23,105,224,.18)
-}
-.btn-primary-custom:hover{background:var(--blue-2);color:#fff;border-color:var(--blue-2)}
-.btn-outline-custom{border:1px solid #d6e1ed;background:#fff;color:var(--ink);border-radius:12px;padding:12px 19px;font-weight:700}
-.btn-outline-custom:hover{border-color:#a9c3e1;color:var(--blue)}
-.hero{
- position:relative;overflow:hidden;padding:145px 0 90px;
- background:
- radial-gradient(circle at 83% 12%,rgba(24,183,160,.16),transparent 25%),
- radial-gradient(circle at 4% 80%,rgba(23,105,224,.13),transparent 30%),
- linear-gradient(180deg,#f5f9ff 0%,#fff 100%);
-}
-.hero:after{content:"";position:absolute;right:-170px;bottom:-240px;width:500px;height:500px;border:1px solid rgba(23,105,224,.08);border-radius:50%}
-.eyebrow{
- display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:99px;
- background:#eaf3ff;border:1px solid #d7e8fb;color:var(--blue);font-weight:800;font-size:.76rem;text-transform:uppercase;letter-spacing:.06em
-}
-.hero h1{font-size:clamp(2.65rem,5.4vw,5rem);line-height:1.02;letter-spacing:-.065em;font-weight:800;color:var(--navy)}
-.hero h1 span{color:var(--blue)}
-.lead-xl{font-size:1.12rem;color:#5d6f84;max-width:650px}
-.hero-photo{
- min-height:545px;border-radius:30px;position:relative;overflow:hidden;
- background:
- linear-gradient(180deg,rgba(4,20,40,.02),rgba(4,20,40,.46)),
- url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1400&q=88") center/cover;
- box-shadow:0 35px 80px rgba(7,26,49,.18)
-}
-.hero-photo:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 50%,rgba(24,183,160,.16))}
-.floating{
- position:absolute;left:24px;bottom:24px;right:24px;background:rgba(255,255,255,.96);border-radius:19px;padding:17px;
- box-shadow:0 18px 40px rgba(5,24,48,.18)
-}
-.float-icon{width:46px;height:46px;border-radius:14px;background:#e8f8f5;color:#087e6e;display:grid;place-items:center;font-size:1.25rem}
-.mini-badge{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;color:#486078}
-.mini-badge i{color:var(--cyan)}
-.trust{position:relative;z-index:4;margin-top:-38px}
-.trust-box{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 20px 50px rgba(8,31,58,.09);padding:22px}
-.trust-item{display:flex;align-items:center;gap:13px}
-.trust-icon{width:44px;height:44px;border-radius:13px;background:#edf5ff;color:var(--blue);display:grid;place-items:center;font-size:1.2rem}
-.trust-item small{display:block;color:var(--muted)}
-.section{padding:100px 0}
-.section-soft{background:var(--bg)}
-.section-tag{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
-.section-title{font-size:clamp(2rem,3.8vw,3.25rem);font-weight:800;letter-spacing:-.05em;color:var(--navy)}
-.section-text{color:var(--muted);max-width:720px}
-.service{
- height:100%;padding:30px;border:1px solid var(--line);border-radius:22px;background:#fff;
- transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden
-}
-.service:after{content:"";position:absolute;width:90px;height:90px;border-radius:50%;background:#eef5ff;right:-42px;top:-42px}
-.service:hover{transform:translateY(-7px);box-shadow:0 22px 45px rgba(8,31,58,.1);border-color:#ccdeef}
-.service-icon{width:57px;height:57px;border-radius:17px;display:grid;place-items:center;background:#edf5ff;color:var(--blue);font-size:1.4rem;margin-bottom:20px}
-.service h3{font-size:1.1rem;font-weight:800}
-.service p{color:var(--muted);font-size:.93rem}
-.check{list-style:none;padding:0;margin:18px 0 0}
-.check li{margin:8px 0;color:#4d6075;font-size:.9rem}
-.check i{color:var(--cyan);margin-right:7px}
-.stats{background:var(--navy);color:#fff}
-.stat{padding:22px 18px}
-.stat strong{font-family:"Plus Jakarta Sans";font-size:2.15rem;letter-spacing:-.04em}
-.stat span{display:block;color:#9db0c6;font-size:.88rem;margin-top:3px}
-.about-photo{
- min-height:560px;border-radius:28px;
- background:url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1300&q=88") center/cover;
- box-shadow:0 28px 65px rgba(8,31,58,.14);position:relative
-}
-.about-stamp{
- position:absolute;left:24px;bottom:24px;background:#fff;border-radius:18px;padding:18px 20px;
- box-shadow:0 16px 35px rgba(8,31,58,.15);max-width:300px
-}
-.info-box{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px;height:100%}
-.info-box small{display:block;color:var(--muted);margin-bottom:4px}
-.info-box strong{font-size:.92rem}
-.cnae{height:100%;padding:24px;border:1px solid var(--line);border-radius:19px;background:#fff}
-.cnae.primary{border:1px solid #bcd8fa;box-shadow:0 12px 28px rgba(23,105,224,.07)}
-.code{color:var(--blue);font-weight:800;font-size:.78rem;letter-spacing:.03em}
-.cnae h3{font-size:1.02rem;font-weight:800;margin-top:8px}
-.cnae p{color:var(--muted);font-size:.9rem;margin:6px 0 0}
-.team{height:100%;padding:25px;border:1px solid var(--line);border-radius:20px;background:#fff}
-.avatar{width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,#eaf3ff,#e7faf6);display:grid;place-items:center;color:var(--blue);font-size:1.35rem;flex:0 0 auto}
-.role{font-size:.8rem;font-weight:800;color:var(--blue)}
-.contact-section{background:linear-gradient(135deg,#f4f9ff,#f2fffc)}
-.contact-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;height:100%}
-.contact-row{display:flex;gap:14px;margin:19px 0}
-.contact-icon{width:44px;height:44px;border-radius:13px;background:#edf5ff;color:var(--blue);display:grid;place-items:center;flex:0 0 auto}
-.contact-row small{display:block;color:var(--muted)}
-.contact-row a,.contact-row strong{color:var(--ink);font-weight:700}
-.map{
- width:100%;height:100%;min-height:515px;border:0;border-radius:22px;box-shadow:0 20px 45px rgba(8,31,58,.08)
-}
-.cta{padding:58px;border-radius:30px;background:linear-gradient(135deg,#1769e0,#083d8f);color:#fff;box-shadow:0 28px 65px rgba(8,61,143,.23);position:relative;overflow:hidden}
-.cta:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-80px;top:-130px}
-.cta p{color:#d9e7f7;max-width:690px}
-footer{background:#061326;color:#9fb0c5}
-footer .footer-brand{color:#fff;font-weight:800}
-footer h6{color:#fff;font-weight:800}
-footer a{color:#bdcad8}
-footer a:hover{color:#fff}
-.social{width:39px;height:39px;border:1px solid #28405d;border-radius:11px;display:inline-grid;place-items:center}
-.top{position:fixed;right:19px;bottom:19px;width:44px;height:44px;border:0;border-radius:13px;background:var(--blue);color:#fff;display:grid;place-items:center;z-index:50;box-shadow:0 12px 28px rgba(23,105,224,.3)}
-@media(max-width:991px){
- .hero{padding-top:120px}.hero-photo{min-height:440px;margin-top:15px}.section{padding:78px 0}.trust{margin-top:22px}
-}
-@media(max-width:575px){
- .hero{padding-bottom:65px}.hero-photo{min-height:365px;border-radius:22px}.hero h1{font-size:2.65rem}
- .section{padding:65px 0}.cta{padding:36px 24px}.trust-box{padding:18px}.map{min-height:400px}
-}
-</style>
+  <style>
+    :root {
+      --argus-primary: #123d68;
+      --argus-secondary: #1b78b8;
+      --argus-accent: #2fb5a7;
+      --argus-dark: #0b2239;
+      --argus-light: #f4f8fb;
+      --argus-text: #314355;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--argus-text);
+      background: #fff;
+    }
+
+    .navbar {
+      background: rgba(11, 34, 57, .96);
+      backdrop-filter: blur(10px);
+    }
+    .navbar-brand {
+      font-weight: 800;
+      letter-spacing: .5px;
+    }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--argus-accent), var(--argus-secondary));
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(47,181,167,.25);
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(6,26,45,.94) 0%, rgba(6,26,45,.82) 46%, rgba(6,26,45,.35) 100%),
+        url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1900&q=85")
+        center/cover no-repeat;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -180px auto;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      background: rgba(47,181,167,.12);
+    }
+    .hero-content { position: relative; z-index: 2; }
+    .hero .eyebrow {
+      color: #7fe0d4;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .82rem;
+    }
+    .hero h1 {
+      color: #fff;
+      font-weight: 800;
+      line-height: 1.08;
+      font-size: clamp(2.5rem, 5vw, 4.8rem);
+    }
+    .hero p { color: rgba(255,255,255,.85); font-size: 1.12rem; max-width: 700px; }
+
+    .btn-argus {
+      background: var(--argus-accent);
+      color: #fff;
+      border: none;
+      font-weight: 700;
+      padding: .85rem 1.35rem;
+      border-radius: 12px;
+    }
+    .btn-argus:hover { background: #26998e; color: #fff; transform: translateY(-1px); }
+    .btn-outline-light { border-radius: 12px; padding: .85rem 1.35rem; font-weight: 700; }
+
+    .section-pad { padding: 90px 0; }
+    .section-soft { background: var(--argus-light); }
+    .section-title .kicker {
+      color: var(--argus-secondary);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      font-size: .78rem;
+    }
+    .section-title h2 {
+      color: var(--argus-dark);
+      font-weight: 800;
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+    .section-title p { max-width: 720px; margin: auto; color: #657789; }
+
+    .service-card {
+      height: 100%;
+      border: 1px solid #e3edf4;
+      border-radius: 20px;
+      padding: 30px;
+      background: #fff;
+      box-shadow: 0 12px 35px rgba(11,34,57,.06);
+      transition: .25s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 20px 45px rgba(11,34,57,.11);
+      border-color: rgba(47,181,167,.35);
+    }
+    .icon-box {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: linear-gradient(135deg, var(--argus-primary), var(--argus-secondary));
+      font-size: 1.35rem;
+      margin-bottom: 20px;
+    }
+    .service-card h5 { color: var(--argus-dark); font-weight: 800; }
+
+    .about-img {
+      width: 100%;
+      min-height: 440px;
+      object-fit: cover;
+      border-radius: 26px;
+      box-shadow: 0 20px 55px rgba(11,34,57,.16);
+    }
+
+    .check-list { list-style: none; padding: 0; }
+    .check-list li { margin-bottom: 15px; display: flex; gap: 12px; }
+    .check-list i { color: var(--argus-accent); margin-top: 4px; }
+
+    .stats {
+      background: var(--argus-dark);
+      color: #fff;
+      border-radius: 26px;
+      overflow: hidden;
+    }
+    .stat {
+      padding: 35px 20px;
+      border-right: 1px solid rgba(255,255,255,.1);
+    }
+    .stat:last-child { border-right: 0; }
+    .stat strong { display: block; font-size: 2rem; font-weight: 800; }
+    .stat span { color: rgba(255,255,255,.7); }
+
+    .cta {
+      background: linear-gradient(135deg, var(--argus-primary), #0a2946);
+      border-radius: 28px;
+      overflow: hidden;
+      position: relative;
+    }
+    .cta::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      right: -120px;
+      top: -180px;
+      border-radius: 50%;
+      background: rgba(47,181,167,.14);
+    }
+
+    .contact-card {
+      border: 1px solid #e1ebf2;
+      border-radius: 20px;
+      padding: 25px;
+      height: 100%;
+      background: #fff;
+    }
+    .contact-item {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .contact-item .mini-icon {
+      flex: 0 0 44px;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: #eaf7f5;
+      color: var(--argus-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-item strong { display: block; color: var(--argus-dark); }
+
+    .map-wrap {
+      border-radius: 22px;
+      overflow: hidden;
+      min-height: 430px;
+      box-shadow: 0 15px 45px rgba(11,34,57,.1);
+    }
+    .map-wrap iframe { width: 100%; height: 100%; min-height: 430px; border: 0; }
+
+    footer {
+      background: #071a2b;
+      color: rgba(255,255,255,.68);
+    }
+    footer a { color: rgba(255,255,255,.78); text-decoration: none; }
+    footer a:hover { color: #fff; }
+    .small-muted { color: #8193a4; font-size: .9rem; }
+
+    @media (max-width: 991.98px) {
+      .hero { min-height: 78vh; }
+      .stat { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.1); }
+      .stat:last-child { border-bottom: 0; }
+    }
+  </style>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg fixed-top" id="nav">
- <div class="container">
-  <a class="navbar-brand d-flex align-items-center gap-2 brand" href="#inicio">
-   <span class="brand-mark"><i class="bi bi-calculator"></i></span>
-   <span>Comosefaz <span class="text-primary">Soluções</span></span>
-  </a>
-  <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu"><i class="bi bi-list fs-2"></i></button>
-  <div class="collapse navbar-collapse" id="menu">
-   <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-    <li><a class="nav-link px-lg-3" href="#servicos">Serviços</a></li>
-    <li><a class="nav-link px-lg-3" href="#empresa">Empresa</a></li>
-    <li><a class="nav-link px-lg-3" href="#atividades">Atividades</a></li>
-    <li><a class="nav-link px-lg-3" href="#equipe">Equipe</a></li>
-    <li><a class="nav-link px-lg-3" href="#contato">Contato</a></li>
-    <li class="ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-primary-custom btn-sm" target="_blank" rel="noopener" href="https://wa.me/558332319261?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Comosefaz%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><i class="bi bi-whatsapp me-1"></i> Fale conosco</a></li>
-   </ul>
-  </div>
- </div>
-</nav>
-
-<header class="hero" id="inicio">
- <div class="container position-relative" style="z-index:2">
-  <div class="row align-items-center g-5">
-   <div class="col-lg-6">
-    <div class="eyebrow"><i class="bi bi-patch-check-fill"></i> Contabilidade & soluções empresariais</div>
-    <h1 class="mt-3 mb-4">Mais clareza para seus números. <span>Mais segurança para seu negócio.</span></h1>
-    <p class="lead-xl mb-4">Serviços contábeis, tributários e administrativos para empresas que buscam organização, informação e suporte para crescer.</p>
-    <div class="d-flex flex-wrap gap-3">
-     <a href="#contato" class="btn btn-primary-custom"><i class="bi bi-chat-square-text me-2"></i>Solicitar atendimento</a>
-     <a href="#servicos" class="btn btn-outline-custom"><i class="bi bi-arrow-down-right me-2"></i>Conhecer soluções</a>
-    </div>
-    <div class="d-flex flex-wrap gap-4 mt-4">
-     <span class="mini-badge"><i class="bi bi-check-circle-fill"></i> Empresa ativa</span>
-     <span class="mini-badge"><i class="bi bi-check-circle-fill"></i> Simples Nacional</span>
-     <span class="mini-badge"><i class="bi bi-check-circle-fill"></i> João Pessoa - PB</span>
-    </div>
-   </div>
-   <div class="col-lg-6">
-    <div class="hero-photo">
-     <div class="floating">
-      <div class="d-flex align-items-center gap-3">
-       <div class="float-icon"><i class="bi bi-graph-up-arrow"></i></div>
-       <div><strong class="d-block">Contabilidade com visão empresarial</strong><span class="text-secondary small">Informação organizada para apoiar decisões do dia a dia.</span></div>
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+    <div class="container py-2">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <span class="brand-mark"><i class="fa-solid fa-calculator"></i></span>
+        <span>ARGUS <small class="d-block fw-normal opacity-75" style="font-size:.65rem; letter-spacing:2px;">CONTABILIDADE</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#empresa">A Empresa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#diferenciais">Diferenciais</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-argus btn-sm" href="mailto:johannaajfriesennrl768@gmail.com">
+              <i class="fa-regular fa-envelope me-1"></i> Fale conosco
+            </a>
+          </li>
+        </ul>
       </div>
-     </div>
     </div>
-   </div>
-  </div>
- </div>
-</header>
+  </nav>
 
-<div class="container trust">
- <div class="trust-box">
-  <div class="row g-4">
-   <div class="col-md-4"><div class="trust-item"><div class="trust-icon"><i class="bi bi-patch-check"></i></div><div><strong>Registro profissional</strong><small>CRC PB001192O</small></div></div></div>
-   <div class="col-md-4"><div class="trust-item"><div class="trust-icon"><i class="bi bi-building-check"></i></div><div><strong>CNPJ ativo</strong><small>41.805.556/0001-32</small></div></div></div>
-   <div class="col-md-4"><div class="trust-item"><div class="trust-icon"><i class="bi bi-geo-alt"></i></div><div><strong>Atendimento local</strong><small>José Américo de Almeida · João Pessoa/PB</small></div></div></div>
-  </div>
- </div>
-</div>
-
-<section class="section" id="servicos">
- <div class="container">
-  <div class="text-center mb-5">
-   <div class="section-tag"><i class="bi bi-grid-3x3-gap"></i> Nossas soluções</div>
-   <h2 class="section-title mt-2">Serviços pensados para a rotina da sua empresa</h2>
-   <p class="section-text mx-auto">Do cuidado com a contabilidade ao suporte administrativo, reunimos diferentes frentes para simplificar processos e organizar informações.</p>
-  </div>
-  <div class="row g-4">
-   <div class="col-md-6 col-lg-4"><article class="service"><div class="service-icon"><i class="bi bi-calculator"></i></div><h3>Contabilidade</h3><p>Organização e acompanhamento das informações contábeis para apoiar a gestão empresarial.</p><ul class="check"><li><i class="bi bi-check2-circle"></i>Escrituração contábil</li><li><i class="bi bi-check2-circle"></i>Demonstrações e relatórios</li><li><i class="bi bi-check2-circle"></i>Informações para gestão</li></ul></article></div>
-   <div class="col-md-6 col-lg-4"><article class="service"><div class="service-icon"><i class="bi bi-receipt-cutoff"></i></div><h3>Consultoria tributária</h3><p>Orientação e acompanhamento de questões fiscais e tributárias conforme o perfil do negócio.</p><ul class="check"><li><i class="bi bi-check2-circle"></i>Orientação tributária</li><li><i class="bi bi-check2-circle"></i>Organização fiscal</li><li><i class="bi bi-check2-circle"></i>Conformidade</li></ul></article></div>
-   <div class="col-md-6 col-lg-4"><article class="service"><div class="service-icon"><i class="bi bi-briefcase"></i></div><h3>Apoio administrativo</h3><p>Suporte às rotinas de escritório para trazer mais organização aos processos empresariais.</p><ul class="check"><li><i class="bi bi-check2-circle"></i>Rotinas administrativas</li><li><i class="bi bi-check2-circle"></i>Organização de processos</li><li><i class="bi bi-check2-circle"></i>Suporte de escritório</li></ul></article></div>
-   <div class="col-md-6 col-lg-4"><article class="service"><div class="service-icon"><i class="bi bi-mortarboard"></i></div><h3>Treinamentos</h3><p>Capacitação em desenvolvimento profissional e gerencial para equipes e empreendedores.</p><ul class="check"><li><i class="bi bi-check2-circle"></i>Desenvolvimento profissional</li><li><i class="bi bi-check2-circle"></i>Desenvolvimento gerencial</li><li><i class="bi bi-check2-circle"></i>Conteúdo sob demanda</li></ul></article></div>
-   <div class="col-md-6 col-lg-4"><article class="service"><div class="service-icon"><i class="bi bi-file-earmark-text"></i></div><h3>Documentação empresarial</h3><p>Preparação de documentos e apoio especializado em atividades administrativas.</p><ul class="check"><li><i class="bi bi-check2-circle"></i>Preparação documental</li><li><i class="bi bi-check2-circle"></i>Apoio especializado</li><li><i class="bi bi-check2-circle"></i>Organização</li></ul></article></div>
-   <div class="col-md-6 col-lg-4"><article class="service"><div class="service-icon"><i class="bi bi-search"></i></div><h3>Consultoria e auditoria</h3><p>Atividades de consultoria e auditoria contábil e tributária para necessidades específicas.</p><ul class="check"><li><i class="bi bi-check2-circle"></i>Análise contábil</li><li><i class="bi bi-check2-circle"></i>Análise tributária</li><li><i class="bi bi-check2-circle"></i>Orientação especializada</li></ul></article></div>
-  </div>
- </div>
-</section>
-
-<section class="stats py-4">
- <div class="container"><div class="row text-center">
-  <div class="col-6 col-lg-3"><div class="stat"><strong>2021</strong><span>Ano de abertura</span></div></div>
-  <div class="col-6 col-lg-3"><div class="stat"><strong>PB</strong><span>CRC PB001192O</span></div></div>
-  <div class="col-6 col-lg-3"><div class="stat"><strong>R$ 500 mil</strong><span>Capital social informado</span></div></div>
-  <div class="col-6 col-lg-3"><div class="stat"><strong>5</strong><span>Frentes de atividade</span></div></div>
- </div></div>
-</section>
-
-<section class="section" id="empresa">
- <div class="container">
-  <div class="row align-items-center g-5">
-   <div class="col-lg-6">
-    <div class="about-photo">
-     <div class="about-stamp"><strong class="d-block">Comosefaz Soluções Empresariais</strong><span class="small text-secondary">Contabilidade e soluções empresariais em João Pessoa - Paraíba.</span></div>
+  <!-- Hero -->
+  <header id="inicio" class="hero">
+    <div class="container hero-content">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="eyebrow mb-3"><i class="fa-solid fa-chart-line me-2"></i>Contabilidade em Matupá - MT</div>
+          <h1>Contabilidade para empresas que querem <span style="color:#72d7cc;">crescer com segurança.</span></h1>
+          <p class="mt-4 mb-4">
+            Soluções contábeis, fiscais e empresariais para ajudar sua empresa a manter as obrigações em dia,
+            organizar suas finanças e tomar decisões com mais confiança.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#servicos" class="btn btn-argus"><i class="fa-solid fa-arrow-down me-2"></i>Conheça nossos serviços</a>
+            <a href="#contato" class="btn btn-outline-light"><i class="fa-solid fa-location-dot me-2"></i>Onde estamos</a>
+          </div>
+        </div>
+      </div>
     </div>
-   </div>
-   <div class="col-lg-6">
-    <div class="section-tag"><i class="bi bi-buildings"></i> Sobre a empresa</div>
-    <h2 class="section-title mt-2">Uma estrutura contábil para acompanhar o seu negócio.</h2>
-    <p class="section-text mt-3">A <strong>Comosefaz Soluções Empresariais</strong> é o nome fantasia da <strong>Comosefaz Serviços Contábeis e Soluções Empresariais LTDA</strong>, constituída em 04/05/2021, com sede em João Pessoa, Paraíba.</p>
-    <p class="section-text">Sua atividade principal é <strong>Atividades de contabilidade</strong>, complementada por treinamento profissional e gerencial, apoio administrativo, preparação de documentos e consultoria/auditoria contábil e tributária.</p>
-    <div class="row g-3 mt-2">
-     <div class="col-sm-6"><div class="info-box"><small>CNPJ</small><strong>41.805.556/0001-32</strong></div></div>
-     <div class="col-sm-6"><div class="info-box"><small>CRC</small><strong>PB001192O</strong></div></div>
-     <div class="col-sm-6"><div class="info-box"><small>Porte</small><strong>Micro Empresa</strong></div></div>
-     <div class="col-sm-6"><div class="info-box"><small>Regime informado</small><strong>Simples Nacional</strong></div></div>
+  </header>
+
+  <!-- Serviços -->
+  <section id="servicos" class="section-pad section-soft">
+    <div class="container">
+      <div class="section-title text-center mb-5">
+        <div class="kicker">Nossas soluções</div>
+        <h2 class="mt-2">Serviços contábeis completos</h2>
+        <p class="mt-3">Um atendimento pensado para simplificar a rotina da sua empresa e manter suas informações contábeis organizadas.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="fa-solid fa-book"></i></div>
+            <h5>Escrituração Contábil</h5>
+            <p class="mb-0">Registro e organização das movimentações contábeis da empresa, com informações claras para acompanhamento da gestão.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+            <h5>Escrituração Fiscal</h5>
+            <p class="mb-0">Acompanhamento das obrigações fiscais e suporte para manter a empresa em conformidade com a legislação aplicável.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="fa-solid fa-building-circle-check"></i></div>
+            <h5>Regularização Empresarial</h5>
+            <p class="mb-0">Apoio em processos de constituição, alterações e regularizações empresariais e cadastrais.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+            <h5>Relatórios e Demonstrativos</h5>
+            <p class="mb-0">Informações contábeis organizadas para apoiar o acompanhamento dos resultados e o planejamento empresarial.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="fa-solid fa-receipt"></i></div>
+            <h5>Declarações e Obrigações</h5>
+            <p class="mb-0">Suporte na preparação e acompanhamento das declarações e obrigações necessárias ao negócio.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="fa-solid fa-comments-dollar"></i></div>
+            <h5>Orientação Contábil</h5>
+            <p class="mb-0">Atendimento próximo para esclarecer dúvidas e transformar dados contábeis em informações úteis para sua empresa.</p>
+          </div>
+        </div>
+      </div>
     </div>
-   </div>
-  </div>
- </div>
-</section>
+  </section>
 
-<section class="section section-soft" id="atividades">
- <div class="container">
-  <div class="text-center mb-5"><div class="section-tag"><i class="bi bi-list-check"></i> Atividades econômicas</div><h2 class="section-title mt-2">Contabilidade e soluções para empresas</h2><p class="section-text mx-auto">Atividades econômicas informadas para a empresa, incluindo a atividade principal e atividades secundárias.</p></div>
-  <div class="row g-4">
-   <div class="col-lg-6"><div class="cnae primary"><div class="code">CNAE PRINCIPAL · 69.20-6-01</div><h3>Atividades de contabilidade</h3><p>Atividade econômica principal da empresa.</p></div></div>
-   <div class="col-lg-6"><div class="cnae"><div class="code">CNAE · 69.20-6-02</div><h3>Consultoria e auditoria contábil e tributária</h3><p>Atividades de consultoria e auditoria contábil e tributária.</p></div></div>
-   <div class="col-md-4"><div class="cnae"><div class="code">CNAE · 85.99-6-04</div><h3>Treinamento</h3><p>Treinamento em desenvolvimento profissional e gerencial.</p></div></div>
-   <div class="col-md-4"><div class="cnae"><div class="code">CNAE · 82.11-3-00</div><h3>Escritório e apoio administrativo</h3><p>Serviços combinados de escritório e apoio administrativo.</p></div></div>
-   <div class="col-md-4"><div class="cnae"><div class="code">CNAE · 82.19-9-99</div><h3>Preparação de documentos</h3><p>Preparação de documentos e serviços especializados de apoio administrativo.</p></div></div>
-  </div>
- </div>
-</section>
+  <!-- Empresa -->
+  <section id="empresa" class="section-pad">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <img class="about-img"
+               src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
+               alt="Equipe trabalhando em ambiente corporativo"
+               loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <div class="section-title text-start">
+            <div class="kicker">Sobre o Escritório Argus</div>
+            <h2 class="mt-2">Experiência, organização e compromisso.</h2>
+          </div>
+          <p class="mt-4">
+            O <strong>Escritório Argus</strong>, razão social <strong>Argus Contabilidade LTDA</strong>,
+            atua em Matupá, Mato Grosso, desde <strong>12 de março de 2008</strong>, oferecendo serviços
+            na área de atividades de contabilidade.
+          </p>
+          <p>
+            Nosso objetivo é contribuir para que empresários tenham mais tranquilidade na gestão das
+            obrigações contábeis e melhores informações para conduzir seus negócios.
+          </p>
 
-<section class="section" id="equipe">
- <div class="container">
-  <div class="mb-5"><div class="section-tag"><i class="bi bi-people"></i> Equipe societária</div><h2 class="section-title mt-2">Quem está à frente da empresa</h2><p class="section-text">Quadro de sócios e administradores informado para a empresa.</p></div>
-  <div class="row g-4">
-   <div class="col-md-4"><div class="team"><div class="d-flex gap-3 align-items-center"><div class="avatar"><i class="bi bi-person-badge"></i></div><div><h3 class="h6 fw-bold mb-1">Analicy Karoliny Carvalho</h3><div class="role">Sócio-Administrador</div></div></div></div></div>
-   <div class="col-md-4"><div class="team"><div class="d-flex gap-3 align-items-center"><div class="avatar"><i class="bi bi-person"></i></div><div><h3 class="h6 fw-bold mb-1">Kleydianne Michelly Ramos Cavalcanti</h3><div class="role">Sócio</div></div></div></div></div>
-   <div class="col-md-4"><div class="team"><div class="d-flex gap-3 align-items-center"><div class="avatar"><i class="bi bi-person"></i></div><div><h3 class="h6 fw-bold mb-1">Pedro Alexandre Nunes de Oliveira</h3><div class="role">Sócio</div></div></div></div></div>
-  </div>
- </div>
-</section>
-
-<section class="section section-soft">
- <div class="container">
-  <div class="text-center mb-5"><div class="section-tag"><i class="bi bi-file-earmark-check"></i> Dados cadastrais</div><h2 class="section-title mt-2">Informações da empresa</h2></div>
-  <div class="row g-3">
-   <div class="col-md-6 col-lg-4"><div class="info-box"><small>Razão Social</small><strong>Comosefaz Servicos Contabeis e Solucoes Empresariais LTDA</strong></div></div>
-   <div class="col-md-6 col-lg-4"><div class="info-box"><small>Nome Fantasia</small><strong>Comosefaz Solucoes Empresariais</strong></div></div>
-   <div class="col-md-6 col-lg-4"><div class="info-box"><small>Natureza Jurídica</small><strong>Sociedade Empresária Limitada</strong></div></div>
-   <div class="col-md-6 col-lg-4"><div class="info-box"><small>Data de abertura</small><strong>04/05/2021</strong></div></div>
-   <div class="col-md-6 col-lg-4"><div class="info-box"><small>Capital Social</small><strong>R$ 500.000,00</strong></div></div>
-   <div class="col-md-6 col-lg-4"><div class="info-box"><small>Situação cadastral</small><strong class="text-success">Ativa</strong></div></div>
-  </div>
- </div>
-</section>
-
-<section class="section contact-section" id="contato">
- <div class="container">
-  <div class="row g-4">
-   <div class="col-lg-5">
-    <div class="section-tag"><i class="bi bi-chat-dots"></i> Fale conosco</div>
-    <h2 class="section-title mt-2">Vamos conversar sobre a sua empresa?</h2>
-    <p class="section-text mt-3">Entre em contato para conhecer nossas soluções contábeis, tributárias e administrativas.</p>
-    <div class="contact-card mt-4">
-     <div class="contact-row"><div class="contact-icon"><i class="bi bi-envelope"></i></div><div><small>E-mail</small><a href="mailto:donisadumoss@gmail.com">donisadumoss@gmail.com</a></div></div>
-     <div class="contact-row"><div class="contact-icon"><i class="bi bi-telephone"></i></div><div><small>Telefones</small><a class="d-block" href="tel:+558332319261">(83) 3231-9261</a><a class="d-block" href="tel:+558332317732">(83) 3231-7732</a></div></div>
-     <div class="contact-row"><div class="contact-icon"><i class="bi bi-geo-alt"></i></div><div><small>Endereço</small><strong>Rua Maria do Carmo Pereira Gama, 56</strong><div class="small text-secondary">José Américo de Almeida · João Pessoa - PB · 58073-455</div></div></div>
-     <div class="d-grid gap-2 mt-4">
-      <a class="btn btn-primary-custom" target="_blank" rel="noopener" href="https://wa.me/558332319261?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Comosefaz%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><i class="bi bi-whatsapp me-2"></i>Chamar no WhatsApp</a>
-      <a class="btn btn-outline-custom" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rua%20Maria%20do%20Carmo%20Pereira%20Gama%2C%2056%2C%20Jo%C3%A3o%20Pessoa%2C%20PB%2C%2058073-455"><i class="bi bi-map me-2"></i>Abrir no Google Maps</a>
-     </div>
+          <ul class="check-list mt-4">
+            <li><i class="fa-solid fa-circle-check"></i><span>Atendimento profissional e próximo.</span></li>
+            <li><i class="fa-solid fa-circle-check"></i><span>Organização das informações contábeis.</span></li>
+            <li><i class="fa-solid fa-circle-check"></i><span>Foco em conformidade e responsabilidade.</span></li>
+            <li><i class="fa-solid fa-circle-check"></i><span>Atuação para empresas de Matupá e região.</span></li>
+          </ul>
+        </div>
+      </div>
     </div>
-   </div>
-   <div class="col-lg-7">
-    <iframe class="map" loading="lazy" title="Localização da Comosefaz Soluções Empresariais" src="https://www.google.com/maps?q=Rua%20Maria%20do%20Carmo%20Pereira%20Gama%2C%2056%2C%20Jo%C3%A3o%20Pessoa%2C%20PB%2C%2058073-455&output=embed"></iframe>
-   </div>
-  </div>
- </div>
-</section>
+  </section>
 
-<section class="pb-5">
- <div class="container">
-  <div class="cta">
-   <div class="row align-items-center g-4 position-relative" style="z-index:2">
-    <div class="col-lg-8"><div class="section-tag text-white opacity-75">Atendimento</div><h2 class="display-6 fw-bold mt-2">Organização hoje para decisões melhores amanhã.</h2><p class="mb-0 mt-3">Conte com a Comosefaz Soluções Empresariais para cuidar das rotinas contábeis e apoiar sua empresa.</p></div>
-    <div class="col-lg-4 text-lg-end"><a class="btn btn-light btn-lg fw-bold rounded-3 px-4" target="_blank" rel="noopener" href="https://wa.me/558332319261?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Comosefaz."><i class="bi bi-whatsapp me-2"></i>Falar agora</a></div>
-   </div>
-  </div>
- </div>
-</section>
+  <!-- Números / confiança -->
+  <section id="diferenciais" class="section-pad section-soft pt-0">
+    <div class="container">
+      <div class="stats row g-0 text-center">
+        <div class="col-md-3 stat">
+          <strong>2008</strong>
+          <span>Ano de fundação</span>
+        </div>
+        <div class="col-md-3 stat">
+          <strong>18+</strong>
+          <span>Anos de atuação</span>
+        </div>
+        <div class="col-md-3 stat">
+          <strong>Ativa</strong>
+          <span>Situação cadastral</span>
+        </div>
+        <div class="col-md-3 stat">
+          <strong>MT</strong>
+          <span>Matupá • Mato Grosso</span>
+        </div>
+      </div>
 
-<footer class="pt-5 pb-4">
- <div class="container">
-  <div class="row g-4">
-   <div class="col-lg-5">
-    <div class="d-flex align-items-center gap-2 mb-3"><span class="brand-mark"><i class="bi bi-calculator"></i></span><span class="footer-brand fs-5">Comosefaz Soluções Empresariais</span></div>
-    <p class="mb-2">Serviços contábeis e soluções empresariais em João Pessoa - Paraíba.</p>
-    <small>CNPJ 41.805.556/0001-32 · CRC PB001192O</small>
-   </div>
-   <div class="col-6 col-lg-2"><h6>Navegação</h6><div class="d-flex flex-column gap-2 small"><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#empresa">Empresa</a><a href="#atividades">Atividades</a></div></div>
-   <div class="col-6 col-lg-2"><h6>Contato</h6><div class="d-flex flex-column gap-2 small"><a href="tel:+558332319261">(83) 3231-9261</a><a href="tel:+558332317732">(83) 3231-7732</a><a href="mailto:donisadumoss@gmail.com">E-mail</a></div></div>
-   <div class="col-lg-3"><h6>Endereço</h6><p class="small mb-0">Rua Maria do Carmo Pereira Gama, 56<br>José Américo de Almeida<br>João Pessoa - PB<br>58073-455</p></div>
-  </div>
-  <hr class="border-secondary my-4">
-  <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small"><span>© <span id="year"></span> Comosefaz Soluções Empresariais.</span><span>Todos os direitos reservados.</span></div>
- </div>
-</footer>
+      <div class="row mt-5 g-4">
+        <div class="col-lg-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+            <h5>Segurança</h5>
+            <p class="mb-0">Informações organizadas e acompanhamento das obrigações para reduzir riscos na rotina empresarial.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="fa-solid fa-handshake"></i></div>
+            <h5>Parceria</h5>
+            <p class="mb-0">Mais do que números: buscamos construir uma relação de confiança com cada empresa atendida.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="fa-solid fa-lightbulb"></i></div>
+            <h5>Clareza</h5>
+            <p class="mb-0">Transformamos informações contábeis em dados mais compreensíveis para apoiar decisões.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<a href="#inicio" class="top" aria-label="Voltar ao topo"><i class="bi bi-arrow-up"></i></a>
+  <!-- CTA -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="cta p-4 p-lg-5 text-white">
+        <div class="row align-items-center position-relative" style="z-index:2;">
+          <div class="col-lg-8">
+            <div class="text-uppercase fw-bold small mb-2" style="color:#72d7cc; letter-spacing:1.5px;">Vamos conversar?</div>
+            <h2 class="fw-bold mb-3">Sua empresa merece uma contabilidade parceira.</h2>
+            <p class="mb-lg-0 text-white-50">Entre em contato com o Escritório Argus e conheça nossas soluções contábeis.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+            <a href="mailto:johannaajfriesennrl768@gmail.com" class="btn btn-argus">
+              <i class="fa-regular fa-paper-plane me-2"></i>Enviar mensagem
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-const nav=document.getElementById('nav');
-window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>20));
-document.getElementById('year').textContent=new Date().getFullYear();
-document.querySelectorAll('#menu .nav-link').forEach(a=>a.addEventListener('click',()=>{
- const menu=document.getElementById('menu');
- if(menu.classList.contains('show')) bootstrap.Collapse.getOrCreateInstance(menu).hide();
-}));
-</script>
+  <!-- Contato + mapa -->
+  <section id="contato" class="section-pad section-soft">
+    <div class="container">
+      <div class="section-title text-center mb-5">
+        <div class="kicker">Fale conosco</div>
+        <h2 class="mt-2">Estamos em Matupá - MT</h2>
+        <p class="mt-3">Consulte nossa localização, entre em contato por telefone ou envie uma mensagem por e-mail.</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-5">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="mini-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>Endereço</strong>
+                Rua José Américo Neres, 1502<br>
+                Bairro ZCI-003<br>
+                Matupá - MT • CEP 78525-000
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="mini-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Telefones</strong>
+                <a href="tel:+556635951681" class="text-decoration-none">(66) 3595-1681</a><br>
+                <a href="tel:+556635952406" class="text-decoration-none">(66) 3595-2406</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="mini-icon"><i class="fa-regular fa-envelope"></i></div>
+              <div>
+                <strong>E-mail</strong>
+                <a href="mailto:johannaajfriesennrl768@gmail.com" class="text-decoration-none text-break">
+                  johannaajfriesennrl768@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="small-muted">
+              <strong>Dados cadastrais</strong><br>
+              CNPJ: 09.414.259/0001-53<br>
+              CRC: MT000664O<br>
+              CNAE principal: 69.20-6-01 — Atividades de contabilidade<br>
+              Capital social: R$ 150.000,00
+            </div>
+
+            <a class="btn btn-outline-primary w-100 mt-4"
+               href="https://www.google.com/maps/search/?api=1&query=Rua+Jose+Americo+Neres+1502,+Matupa,+MT"
+               target="_blank" rel="noopener">
+              <i class="fa-solid fa-map-location-dot me-2"></i>Abrir no Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps?q=Rua%20Jose%20Americo%20Neres%2C%201502%2C%20Matupa%2C%20MT%2C%2078525-000&output=embed"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização do Escritório Argus no Google Maps">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informações legais -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <h4 class="fw-bold" style="color:var(--argus-dark);">Escritório Argus</h4>
+          <p class="mb-2">Argus Contabilidade LTDA • Sociedade Empresária Limitada • Matriz • Microempresa</p>
+          <p class="small-muted mb-0">
+            Situação cadastral: <strong>Ativa</strong> • Optante pelo Simples Nacional desde 12/03/2008.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <h6 class="fw-bold">Sócios-Administradores</h6>
+          <p class="small-muted mb-0">Maicon Thiago Frigeri<br>Olivar Frigeri</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-md-7">
+          <div class="fw-bold text-white">ARGUS CONTABILIDADE</div>
+          <div class="small">Contabilidade • Matupá - Mato Grosso</div>
+        </div>
+        <div class="col-md-5 text-md-end">
+          <div class="small">CNPJ 09.414.259/0001-53</div>
+          <div class="small mt-1">© <span id="ano"></span> Escritório Argus. Todos os direitos reservados.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
